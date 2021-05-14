@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+a {
+    color: #3498db;
+}
+
+a:hover {
+    color:  #2471a3;
+    text-decoration: underline;
+}
+
+
+mark {
+    background-color:  #d6eaf8 ;
+}
+
+p {
+    padding: 5px 0;
+}
+
+.container {
+    padding: 1.5%;
+    width: 60%;
+    margin: auto;
+}
+
+.bio {
+    padding-top: 5%;
+}
+
+.bio p {
+    font-size: 18px;
+}
+
+.post-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid silver;
+    padding-bottom: 1%;
+}
+
+.post-date {
+    color: gray;
+}
+
+.post-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.post-title::before {
+    content: "# ";
+}
+
+.post-nav {
+    padding: 2% 0;
+}
+
+.post-nav a {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.post-body h2 {
+    margin: 1%;
+    text-decoration: underline;
+}
+
+.post-body * {
+    font-family: 'Poppins', sans-serif;
+}
+
+.post-body img {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.list-of-posts a {
+    font-size: 18px;
+}
+.list-of-posts a::before {
+    content: "/";
+}
+
+@media screen and (max-width: 1130px) {
+    .container {
+        padding: 1%;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    img {
+        margin-left: 25%;
+    }
+}
