@@ -4,21 +4,19 @@ const path = require("path")
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const {errors, data} = await graphql(`
-    {
-        allFile(filter: {sourceInstanceName: {eq: "blog"}}) {
-            edges {
-              node {
-                childMarkdownRemark {
-                  frontmatter {
-                    title
-                  }
-                }
-                name
-              }
+  {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              title
+              slug
             }
           }
-    }
-    `)
+        }
+      }
+  }
+  `)
   // Handle errors
   if (errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
@@ -26,14 +24,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
   // Create pages for each markdown file.
   const blogPostTemplate = path.resolve(`src/templates/blog-post.tsx`)
-  data.allFile.edges.forEach(({ node }) => {
-    const path = node.name
-    const title = node.childMarkdownRemark.frontmatter.title
+  data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path,
+      path: node.frontmatter.slug,
       component: blogPostTemplate,
       context: {
-        slug: title,
+        slug: node.frontmatter.slug
       },
     })
   })

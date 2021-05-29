@@ -1,0 +1,51 @@
+.post * {
+    font-family: 'Rubik', sans-serif;
+}
+
+.post img {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.post pre, code * {
+    font-family: Consolas, 'Courier New', monospace !important;
+}
+
+.post-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1%;
+}
+
+.post-date {
+    color: gray;
+}
+
+.post-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.post-body h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    margin: 1% 0;
+}
+
+.post-body h1 {
+    font-size: 24px;
+}
+
+.post-body h2 {
+    font-size: 22px;
+}
+
+
+.post-body p {
+    font-size: 18px !important;
+}
+
+.post-body li {
+    font-size: 18px !important;
+    margin: 1% 0;
+}
