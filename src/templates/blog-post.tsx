@@ -7,7 +7,7 @@ export default function BlogPost({ data }: any) {
     const post = data.markdownRemark
     return (
         <Container className="post">
-          <Nav title={post.frontmatter.title}></Nav>
+          <Nav title="Blog"></Nav>
           <div className="post-info">
             <div className="post-title">{post.frontmatter.title}</div>
             <div className="post-date">{post.frontmatter.date}</div>

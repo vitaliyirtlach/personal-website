@@ -6,8 +6,13 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Vitaliy Zakaznov (Irtlach)`,
+    siteUrl: `https://www.vitaliy.netlify.app`,
+    description: `About developer life Vitaliy Zakaznov (Irtlach)`,
+  },
   plugins: [
-    "gatsby-plugin-sharp",
+    "gatsby-plugin-sharp", 
     "gatsby-transformer-sharp",
     `gatsby-plugin-typescript`,
     {
@@ -29,10 +34,18 @@ module.exports = {
         ],
       },
     },
-
-
-
-
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Vitaliy Zakaznov (Irtlach)`,
+        short_name: `Vitaliy`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#000`,
+        display: `standalone`,
+        icon: `${__dirname}/static/photo.jpeg`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
