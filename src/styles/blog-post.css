@@ -1,6 +1,6 @@
 .post img {
     margin: 0 auto;
-    width: 40%;
+    width: 100%;
 }
 
 .post pre, code * {
@@ -13,10 +13,10 @@
     align-items: center;
     padding-bottom: 1%;
 }
-
+ 
 .post-date {
     color: gray;
-}
+} 
 
 .post-title {
     font-size: 2.5rem;

@@ -12,4 +12,15 @@ This year I finished studying in school №73. My favorite subjects are: Math, P
 ### Family
 I have a small family two brothers ([Vadim Zakaznov (Irtlach)](https://www.kaggle.com/vad13irt) and Kirill Irtlach), mother and father and grandparents but we live in active life and we like spending time out door or ride a bike. 
 
+### Who is my idol?
+I think my idol is [Ben Awad](https://github.com/benawad), because he made a big community of JavaScript programmers in YouTube, Discord and other social medias. I like watching his guides and how he did a social media app - [DogeHouse](https://dogehouse.tv). 
+### Contact
+* Github - https://github.com/vitaliyirtlach
+* Facebook - https://www.facebook.com/vitaliyirtlach/
+* Instagram - https://www.instagram.com/vitaliyirtlach/
+* Twitter - https://twitter.com/w13vitaliy
+* YouTube - https://www.youtube.com/channel/UChSuKn_2LYGmIMsprtXeKwA
+* Gmail - vitaliyirtlach@gmail.com
+* Habr - https://qna.habr.com/user/w13vitaliy
+
 ...
